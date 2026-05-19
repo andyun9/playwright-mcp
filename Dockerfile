@@ -2,7 +2,7 @@ FROM mcr.microsoft.com/playwright:v1.52.0-noble
 
 WORKDIR /app
 
-RUN npm install -g @playwright/mcp@latest
+RUN npm install -g @playwright/mcp@latest && npx playwright install chromium --with-deps
 
 EXPOSE 8080
 
